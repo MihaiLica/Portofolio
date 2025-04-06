@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background: radial-gradient(circle at center, #0d1b2a, #000000); /* Dark background */
+    color: white;
+}
+
+.quiz-container {
+    background: #1a1a2e;
+    border: 2px solid #4dabf7; /* Blue border like the game show */
+    border-radius: 16px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 30px rgba(77, 171, 247, 0.4);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4dabf7;
+    text-transform: uppercase;
+}
+
+#answers {
+    list-style: none;
+    padding: 0;
+}
+
+#answers li {
+    margin: 10px 0;
+}
+
+#answers button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    background: linear-gradient(to right, #011638, #2e86de); /* Game-show style gradient */
+    color: #fff;
+    border: 2px solid #4dabf7;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#answers button:hover {
+    background: linear-gradient(to right, #2e86de, #011638); /* Hover effect with reversed gradient */
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+#answers button:active {
+    transform: scale(0.98);
+    background: #0d3b66; /* Active color for button */
+    border-color: #89cff0;
+}
+
+.hide {
+    display: none;
+}
+
+#next-btn {
+    background: #ff7e5f; /* Orange gradient similar to the "next" button color */
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+#next-btn:hover {
+    background: #feb47b; /* Lighter orange on hover */
+    transform: scale(1.05);
+}
+
+#next-btn:active {
+    transform: scale(0.98); /* Slightly scale down on click */
+    background: #e76456; /* Darker shade of orange */
+}
+
+#setup {
+    background: #1a1a2e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+#setup select {
+    background-color: #011638;
+    color: white;
+    padding: 10px;
+    border: 2px solid #4dabf7;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#setup button {
+    background: #4dabf7; /* Blue color for the "Start Quiz" button */
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#setup button:hover {
+    background: #2e86de; /* Darker blue on hover */
+}
+
+#setup button:active {
+    background: #1a68a7; /* Darker blue on click */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #4dabf7;
+}
